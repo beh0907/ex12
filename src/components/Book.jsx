@@ -33,7 +33,7 @@ const Book = withRouter(({ book, history }) => {
 
     return (
         <>
-            <Button variant="primary" onClick={handleShow}>
+            <Button variant="primary" onClick={handleShow} className='w-100'>
                 상세 보기
             </Button>
 
