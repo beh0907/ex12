@@ -62,7 +62,7 @@ const BookPage = () => {
                                 <Card.Body>
                                     <Image src={book.thumbnail ? book.thumbnail : 'http://via.placeholder.com/170x150'} />
                                     <div className='ellipsis'>{book.title}</div>
-                                    <div className='ellipsis'>{book.price} 원</div>
+                                    <div className='ellipsis'>{book.price.toLocaleString()} 원</div>
                                     <Book book={book} />
                                 </Card.Body>
                             </Card>

@@ -50,7 +50,7 @@ const Book = withRouter(({ book, history }) => {
                     <Card>
                         <Card.Body className='book'>
                             <Image src={book.thumbnail ? book.thumbnail : 'http://via.placeholder.com/170x150'} />
-                            <div className='ellipsis'>가격 : {book.price} 원</div>
+                            <div className='ellipsis'>가격 : {book.price.toLocaleString()} 원</div>
                             <div className='ellipsis'>저자 : {book.authors}</div>
                             <div className='ellipsis'>출판사 : {book.publisher}</div>
                             <hr />

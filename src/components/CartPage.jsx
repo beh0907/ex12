@@ -37,7 +37,7 @@ const CartPage = () => {
     return (
         <Row className='justify-content-center my-5'>
             <Col md={5}>
-                <h1 className='text-center'>즐겨찾기</h1>
+                <h1 className='text-center'>장바구니</h1>
             </Col>
 
             <Row>
@@ -57,7 +57,7 @@ const CartPage = () => {
                             <tr key={book.isbn} className='text-center align-middle'>
                                 <td>{book.title}</td>
                                 <td>{book.publisher}</td>
-                                <td><s>{book.price} 원</s> <br /> {book.sale_price} 원</td>
+                                <td><s>{book.price.toLocaleString()} 원</s> <br /> {book.sale_price.toLocaleString()} 원</td>
                                 <td>{book.status}</td>
                                 <td><Button className='btn-sm' variant='danger' onClick={() => deleteBook(book.isbn)}>장바구니 삭제</Button></td>
                             </tr>

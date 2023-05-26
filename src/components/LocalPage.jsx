@@ -19,6 +19,9 @@ const LocalPage = ({ history }) => {
 
     const { REACT_APP_KAKAO_REST_API_KEY } = process.env;
 
+
+    console.log(REACT_APP_KAKAO_REST_API_KEY)
+
     const getdata = async () => {
         setLoading(true)
 
